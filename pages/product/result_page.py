@@ -13,8 +13,6 @@ class ProductPage(SeleniumDriver):
     # Locators
     _product = "img[alt="+"'"+data_search.string_search+"'"+"]"
     _one_time_purchase = "//span[@class='modeTitle a-text-bold' and contains(text(), 'One-time Purchase')]"
-    _one_time_purchase_radio_button = "(//i[@class='a-icon a-icon-radio'])[2]"
-    _one_time_option = "//*[@id='onetimeOption']/label/i"
     _add_to_cart_button = "input[id='add-to-cart-button']"
     _cart_count_0 ="//span[@id='nav-cart-count' and contains(text(),'0')]"
     _cart_count_1 ="//span[@id='nav-cart-count' and contains(text(),'1')]"

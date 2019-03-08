@@ -12,17 +12,14 @@ class CartPage(SeleniumDriver):
 
     # Locators
     _cart_icon = "span[class='nav-cart-icon nav-sprite']"
-    _item_in_cart = "//span[@class='a-size-medium sc-product-title a-text-bold' and contains(text(), 'Softsoap " \
-                    "Liquid Hand Soap, Fresh Breeze - 7.5 fluid ounce (Pack of 6)')]"
-
-    _item_in_cart1 = "//span[@class='a-size-medium sc-product-title a-text-bold' and contains(text(),"+"'"+data_search.string_search+"'"+ ")]"
+    _item_in_cart = "//span[@class='a-size-medium sc-product-title a-text-bold' and contains(text(),"+"'"+data_search.string_search+"'"+ ")]"
 
 
     def click_cart(self):
         self.elementClick(self._cart_icon, locatorType="css")
 
     def verify_item_in_cart(self):
-        result = self.isElementPresent(self._item_in_cart1, locatorType="xpath")
+        result = self.isElementPresent(self._item_in_cart, locatorType="xpath")
         return result
 
 

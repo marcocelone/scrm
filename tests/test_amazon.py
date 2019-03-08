@@ -32,12 +32,9 @@ class LoginTests(unittest.TestCase):
     # Add item to cart and verify is added
     @pytest.mark.run(order=3)
     def test_add_item_to_cart(self):
-        #time.sleep(2)
         verify_empty_cart = self.pp.verify_empty_cart()
         assert verify_empty_cart == True
-        #time.sleep(5)
         self.pp.add_to_cart()
-        #time.sleep(5)
         verify_items_is_added = self.pp.verify_add_item_cart()
         assert verify_items_is_added == True
 
