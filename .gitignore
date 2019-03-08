@@ -1,2 +1,8 @@
 .idea/
 venv/
+.pytest_cache/
+*.pyc
+report.html
+assets/
+automation.log
+gekodriver.log

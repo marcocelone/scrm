@@ -25,6 +25,7 @@ class ProductPage(SeleniumDriver):
         self.elementClick(self._one_time_purchase, locatorType="xpath")
 
     def click_add_to_cart(self):
+        self.scroll_down_page()
         self.elementClick(self._add_to_cart_button, locatorType="css")
 
     def product_click(self):

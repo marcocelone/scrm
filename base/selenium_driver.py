@@ -150,3 +150,12 @@ class SeleniumDriver():
             self.log.info("Element not appeared on the web page")
             print_stack()
         return element
+
+    def scroll_down_page(self):
+        try:
+            self.driver.execute_script("window.scrollTo(0, 1000);")
+            self.log.info("Page scrolled Successfully")
+        except:
+            self.log.info("Could not scroll page")
+            print_stack()
+
