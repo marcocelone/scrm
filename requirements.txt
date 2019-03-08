@@ -1,0 +1,8 @@
+py==1.5.3
+pytest==3.6.3
+pytest-html==1.20.0
+pytest-metadata==1.8.0
+pytest-ordering==0.6
+selenium==3.141.0
+
+
