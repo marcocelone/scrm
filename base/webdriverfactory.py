@@ -24,9 +24,6 @@ class WebDriverFactory():
             driver = webdriver.Chrome()
         elif self.browser == "firefox":
             driver = webdriver.Firefox()
-        elif self.browser == "safari":
-            # Set chrome driver
-            driver = webdriver.Safari()
         else:
             driver = webdriver.Firefox()
         # Setting Driver Implicit Time out for An Element
